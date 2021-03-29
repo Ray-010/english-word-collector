@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body a{
+  display: block;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.word-nav {
+  display: flex;
+  font-size: 15px;
+}
+.wordbox {
+  margin-right: 10px;
+}
+.oftenbox{
+  margin-right: 0;
+}
+.box {
+  
+}
