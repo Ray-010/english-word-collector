@@ -6,6 +6,10 @@ html {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+body {
+  font-family: Century, Georgia, 'Times New Roman', Times, serif;
+  background-color: #CCFFFF;
+}
 body a{
   display: block;
   text-decoration: none;
@@ -18,16 +22,75 @@ ul li {
   padding: 0;
 }
 
+
+/* header */
+.header {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  /* color: */
+  background-color: aqua;
+}
+/* description */
+.description{
+  width: 400px;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.4rem;
+}
+.description-attention {
+  /* text-align: left; */
+  /* display: inline-block; */
+  color: red;
+}
+
+/* input text */
+.input-text {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+}
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  width: 150px;
+  height: 30px;
+}
+
+/* word list */
 .word-nav {
   display: flex;
+  justify-content: center;
   font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
 .wordbox {
   margin-right: 10px;
 }
 .oftenbox{
   margin-right: 0;
 }
-.box {
-  
+.word-decoration {
+  border: 1px solid black;
+  height: 30px;
+  line-height: 25px;
+}
+.word-background {
+  background-color: whitesmoke;
+}
+.number-width {
+  width: 100px;
+  text-align: center;
 }

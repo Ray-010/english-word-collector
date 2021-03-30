@@ -2,18 +2,23 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>単語出力装置</title>
+    <title>単語回収</title>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <textarea id="input-message"></textarea>
-    <input type="button" onclick="showMessage()" value="送信">
+    <header class="header">
+      <p>単語頻出度リスト</p>
+    </header>
+    <div class="description">
+      <p class="description-text">英文を入力してください</br>出力リストに空欄ができる時がありますが、出力には影響はないので気にしないでください</br>「"!?」は削除されるのでそのままで大丈夫です</p>
+      <p class="description-attention">※半角文字、スペースのみを用いてください</br>※ I は出力されません</br>※一部単語の形は現在形に変換されます</br>※一部単語の複数形は単数形に変換されます</p>
+    </div>
+    <textarea id="input-message" class="input-text"></textarea>
+    <input class="btn-submit" type="button" onclick="showMessage()" value="解析">
     <nav class="word-nav">
       <ul id="output-word">
-        <!-- <p id="output-word" class="wordbox box"></p> -->
       </ul>
       <ul id ="output-number">
-        <!-- <p id ="output-number" class="oftenbox box"></p> -->
       </ul>
     </nav>
     <!-- <script src="../jquery-3.4.1.min.js"></script> -->
