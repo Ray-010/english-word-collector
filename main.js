@@ -194,8 +194,8 @@ const showMessage = function(){
   let word_list ='';
   let word_number_list = '';
   for(let i = 0; i < output.length; i++){
-    word_list += '<li>' + word_collections[i] + '<li>';
-    word_number_list += '<li>' + word_often[i] + '<li>';
+    word_list += '<li class="word-decoration word-background">' + word_collections[i] + '<li>';
+    word_number_list += '<li class="word-decoration number-width">' + word_often[i] + '<li>';
   }
   document.getElementById("output-word").innerHTML = word_list;
   document.getElementById("output-number").innerHTML = word_number_list;
